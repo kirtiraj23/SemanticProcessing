@@ -55,6 +55,7 @@ for example, detect that the game is football by defining semantic associations 
 
 ##### WordNet 
 --is a part of NLTK ,it is used to identify the 'correct' sense of a word.
+-- WordNet has a network of synonyms called synset for individual words.
 
 ##### ConceptNet 
 --is a representation that provides commonsense linkages between words. For example, it states that bread is commonly found near toasters. These everyday facts could be useful if, for e.g., you wanted to make a smart chatbot which says - “Since you like toasters, do also like bread? I can order some for you.”
@@ -63,8 +64,18 @@ for example, detect that the game is football by defining semantic associations 
 -- Word sense disambiguation (WSD) is the task of identifying the correct sense of an ambiguous word such as 'bank', 'bark', 'pitch' etc.and Naive Bayes classifier is Supervised techniques
 
  #### Word Sense Disambiguation - Lesk Algorithm
-As with most machine learning problems, lack of labelled data is a common problem in building disambiguation models. Thus, we need unsupervised techniques to solve the same problem.  
+--As with most machine learning problems, lack of labelled data is a common problem in building disambiguation models. Thus, we need unsupervised techniques to solve the same problem.  
 
+ A popular unsupervised algorithm used for word sense disambiguation is the Lesk algorithm.
  
+ 
+ ##### Distributional Semantics
+ --‘You shall know a word by the company it keeps’.
+ 
+ ##### The most commonly used representation of words is using 'word vectors'. There are two broad techniques to represent words as vectors:
 
-A popular unsupervised algorithm used for word sense disambiguation is the Lesk algorithm.
+--The term-document occurrence matrix, where each row is a term in the vocabulary and each column is a document (such as a webpage, tweet, book etc.)  
+
+--The term-term co-occurrence matrix, where the ith row and jth column represents the occurrence of the ith word in the context of the jth word.
+
+
