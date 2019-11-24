@@ -79,3 +79,13 @@ for example, detect that the game is football by defining semantic associations 
 --The term-term co-occurrence matrix, where the ith row and jth column represents the occurrence of the ith word in the context of the jth word.
 
 
+##### There are two ways of creating a co-occurrence matrix:
+
+##### Using the occurrence context (e.g. a sentence):
+Each sentence is represented as a context (there can be other definitions as well). If two terms occur in the same context, they are said to have occurred in the same occurrence context.
+
+###### Skip-grams (x-skip-n-grams):
+A sliding window will include the (x+n) words. This window will serve as the context now. Terms that co-occur within this context are said to have co-occurred.
+ 
+
+
